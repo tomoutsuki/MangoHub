@@ -10,7 +10,8 @@ app.use(
 app.use(express.json());
 
 app.get('/test', (req, res) => {
-    const url = req.data;
+    let obj = JSON.parse(req);
+    const url = obj.data;
     res.json(url);
 });
 const port = 8000;
