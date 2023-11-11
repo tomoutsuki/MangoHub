@@ -10,11 +10,11 @@ app.use(
 app.use(express.json());
 
 app.get('/test', (req, res) => {
-    console.log(req);
+    /*console.log(req);
     console.log(typeof req);
     let obj = JSON.parse(req);
-    const url = obj.data;
-    res.send(url);
+    const url = obj.data;*/
+    res.send("TOMA");
 });
 const port = 8000;
 app.listen(port, () => {
