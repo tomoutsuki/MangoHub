@@ -10,7 +10,7 @@ app.use(
 app.use(express.json());
 
 app.get('/test', (req, res) => {
-    console.log(typeof req);
+    console.log(req);
     /*console.log(typeof req);
     let obj = JSON.parse(req);
     const url = obj.data;*/
@@ -18,5 +18,5 @@ app.get('/test', (req, res) => {
 });
 const port = 8000;
 app.listen(port, () => {
-    console.log(`Yo, the code is test 8`)
+    console.log(`Yo, the code is test 9`)
   })
