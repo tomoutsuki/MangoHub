@@ -14,9 +14,9 @@ app.get('/test', (req, res) => {
     console.log(typeof req);
     let obj = JSON.parse(req);
     const url = obj.data;*/
-    res.send("TOMA");
+    res.send(req);
 });
 const port = 8000;
 app.listen(port, () => {
-    console.log(`Yo, the code is test 3`)
+    console.log(`Yo, the code is test 7`)
   })
