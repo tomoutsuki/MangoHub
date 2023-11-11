@@ -12,9 +12,9 @@ app.use(express.json());
 app.get('/test', (req, res) => {
     let obj = JSON.parse(req);
     const url = obj.data;
-    res.json(url);
+    res.send(url);
 });
 const port = 8000;
 app.listen(port, () => {
-    console.log(`Yo`)
+    console.log(`Yo, the code is test 2`)
   })
